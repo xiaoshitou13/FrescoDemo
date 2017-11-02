@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="test.bwie.com.frescodemo.MainActivity">
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:id="@+id/simple"
+        app:placeholderImage="@mipmap/ic_launcher"
+        app:failureImage="@mipmap/ic_launcher_round"
+        app:failureImageScaleType="centerInside"
+
+
+
+        app:progressBarImage="@mipmap/www"
+        app:progressBarImageScaleType="centerInside"
+        app:progressBarAutoRotateInterval="3000"
+
+        app:retryImage="@mipmap/cj"
+        app:retryImageScaleType="centerCrop"
+
+        app:roundedCornerRadius="30dp"
+        app:roundingBorderWidth="3dp"
+        app:roundingBorderColor="@color/colorAccent"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/jianjing" />
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        app:placeholderImage="@mipmap/ic_launcher"
+        app:failureImage="@mipmap/ic_launcher_round"
+        android:id="@+id/jianjing"
+        android:layout_below="@+id/simple"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true" />
+
+</RelativeLayout>
